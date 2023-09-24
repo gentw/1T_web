@@ -1,0 +1,23 @@
+.swipe{
+	display: none;
+}
+@include respond(tab-port){
+	.swipe{
+		color: $color-wheat-1;
+		position: fixed;
+		top: 50%;
+		z-index: 20;
+		display: flex;
+		align-items: center;
+		transition: .2s;
+		&__arrow{
+			padding: 0 2rem;
+			font-size: 3rem;
+			animation: .7s ease-in 5 arrow;
+		}
+	}
+	.swipe-left{
+		transform: rotate(180deg);
+		transform-origin: x-axis;
+	}	
+}

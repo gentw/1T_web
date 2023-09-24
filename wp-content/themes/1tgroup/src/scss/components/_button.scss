@@ -1,0 +1,29 @@
+.btn{
+	&,
+	&:link,
+	&:visited{
+		text-decoration: none;
+		padding: 1.2rem 3.7rem;
+		display: inline-block;
+		font-size: 1.5rem;
+		cursor: pointer;
+		transition: .2s;
+		border-radius: 0;
+	}
+	&:hover,
+	&:focus{
+		outline: none;
+		background-color: $color-wheat-1;
+	}
+	&--gallery{
+		border: .1rem solid $color-wheat-1;
+		color: $color-black-3;
+		&:hover{
+			color: $color-white;
+		}
+	}
+	&--slider{
+		border: .1rem solid $color-white;
+		color: $color-white;
+	}
+}

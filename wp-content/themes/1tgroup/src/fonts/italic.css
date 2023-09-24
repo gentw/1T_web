@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Playfair Display Italic';
+  src: url('Playfair-Display-Italic.eot'); /* IE9 Compat Modes */
+  src: url('Playfair-Display-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Playfair-Display-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('Playfair-Display-Italic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Playfair-Display-Italic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Playfair-Display-Italic.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

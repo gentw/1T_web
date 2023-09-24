@@ -1,0 +1,38 @@
+/*
+	Theme Name: 1T-Group
+	Author: Webyflex
+	Version: 1.0
+
+*/
+//Import bootstrap
+@import "../../../../../../node_modules/bootstrap/scss/bootstrap";
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/font';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+@import 'base/animations';
+
+
+@import 'components/slider';
+@import 'components/button';
+@import 'components/gallery';
+@import 'components/project';
+@import 'components/bg-video';
+@import 'components/contact';
+@import 'components/menu-btn';
+@import 'components/slide-btn';
+@import 'components/light-mode';
+
+@import 'layout/header';
+@import 'layout/navigation';
+
+@import 'pages/home';
+
+
+
+
+

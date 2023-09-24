@@ -1,0 +1,252 @@
+@include respond(tab-port){
+	.open-nav{
+		width: 100% !important;
+		opacity: 1 !important;
+		transform: translateX(0rem) !important;
+	}
+}
+.navigation{
+	backface-visibility: hidden;
+	background-color: $color-black-1;
+	min-height: 100%;
+	flex: 0 0 26rem;
+	z-index: 4;
+	@include respond(tab-port){
+		position: fixed;
+		display: flex;
+		justify-content: center;
+		width: 0;
+		opacity: 1;
+		transform: translateX(-15rem);
+		transition: .7s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+
+	}
+	.fixed{
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 26rem;
+		min-height: 100vh;
+		@include respond(tab-port){
+			position: static;
+			width: 18rem;
+			justify-content: space-around;
+		}
+	}
+
+
+	&__dropdown{
+		background-color: rgba($color-black-3, .8);
+		position: fixed;
+		visibility: hidden;
+		opacity: 0;
+		transition: .2s;
+		top: 0;
+		left: 26rem;
+		z-index: 3;
+		min-height: 100%;
+		width: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		@include respond(tab-port){
+			position: static;
+			width: auto;
+			justify-content: center;
+			align-items: center;
+			background-color: transparent;
+			transition: .5s;
+			height: 0;
+		}
+		&-item{
+			list-style: none;
+			width: 100%;
+			padding: 0;
+			@include respond(tab-port){
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+			}
+			&:first-child{
+				margin-top: 25rem;
+					@include respond(tab-port){
+					margin: 0;
+				}
+			}
+			&:hover{
+				background-color: rgba($color-black-2, .4);
+				@include respond(tab-port){
+					background-color: transparent;
+				}
+			} 
+		}
+
+		&-list{
+			display: none;
+			margin-left: 5rem;
+			font-size: 1.5rem;
+			width: 0;
+			font-family: Raleway;
+			color: $color-white;
+			@include respond(tab-port){
+				margin: 0;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				height: 5rem;
+			}
+			&:hover{
+				color: $color-wheat-1;
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__logo-box{
+		text-align: center;
+		align-self: center;
+		display: flex;
+		flex-direction: column;
+		height: 4.7rem;
+		width: 4.7rem;
+		margin: 0 0 10rem 0;
+		@include respond(tab-port){
+			margin: 0;
+		}
+		
+	}
+
+	&__logo{
+		margin-bottom: 1rem;
+
+	}
+
+	&__text-logo{
+		font-family: Raleway;
+		font-size: 2.4rem;
+		color: $color-white;
+		align-self: center;
+	}
+
+	&__nav{
+
+		width: 100%;
+		@include respond(tab-port){
+			display: flex;
+			justify-content: center;	
+			align-items: center;
+		}
+	}
+
+	&__list{
+		width: 100%;
+		@include respond(tab-port){
+			margin: 0;
+		}
+	}
+
+	&__item{
+		list-style: none;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		@include respond(tab-port){
+			flex-direction: column;
+		}
+		&:not(:last-child){
+			margin-bottom: 2rem;
+		}
+		&::before{
+			content: '';
+			width: 0;
+			height: .1rem;
+			background-color: $color-wheat-1;
+			position: absolute;
+			left: 0;
+			transition: .2s;
+		}
+		&:hover::before{
+			width: 3.5rem;
+			@include respond(tab-port){
+				width: 0;
+			}
+		}
+		
+		&:hover > .navigation__link{
+			color: $color-wheat-1;
+		}
+		&:hover > .navigation__link span{
+			color: $color-wheat-1;	
+		}
+	}
+
+	&__link{
+		color: $color-white;
+		font-size: 1.5rem;
+		font-family: Raleway;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		margin-left: 5rem;
+		@include respond(tab-port){
+			display: flex;	
+			justify-content: center;
+			margin: 0;
+		}
+		span{
+			color: $color-white;
+			font-size: 1.2rem;
+			margin-right: 3.5rem;
+			@include respond(tab-port){
+				margin: 0;
+				position: absolute;
+	    		position: absolute;
+    			right: -25px;
+    			transform: rotate(90deg);
+			}
+		}
+		&:hover{
+			text-decoration: none;
+			color: $color-wheat-1;
+		}
+	}
+
+	.copyright{
+		text-align: center;
+		align-self: center;
+		color: $color-gray-0;
+		font-family: Raleway;
+		font-size: 1.4rem;
+		flex-grow: 1;
+		margin-top: 5rem;
+		@include respond(tab-port){
+			flex-grow: 0;
+			margin: 0;
+		}
+	}
+}
+ul li:hover > ul,
+ul li ul:hover{
+	visibility: visible;
+	opacity: 1;
+	width: 25rem;
+	z-index: 100;
+	@include respond(tab-port){
+		width: auto;
+		height: 15rem;
+
+	}
+}
+ul li:hover > ul li a{
+	display: block;
+	padding: 1.5rem;
+	width: 17rem;
+	z-index: 100;
+	transform: translateX(0rem);
+}

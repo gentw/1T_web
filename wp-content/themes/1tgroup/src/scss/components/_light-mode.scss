@@ -1,0 +1,22 @@
+.white-bg{
+	background-color: $color-white !important;
+}
+/* .white-nav{
+	background-color: $color-white !important;
+} */
+
+.white-nav-text{
+	color: $color-black-0 !important;
+	&:hover{
+		color: $color-wheat-1 !important;
+	}
+}
+
+@include respond(tab-port){
+	.dropdown_list-light{
+		color: $color-black-0 !important;
+		&:hover{
+			color: $color-wheat-1 !important;
+		}
+	}	
+}

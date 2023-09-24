@@ -1,0 +1,51 @@
+.heading-primary{
+	font-family: 'Playfair Display Regular';
+	font-size: 3rem;
+	color: $color-black-1;
+}
+.paragraph-top{
+	font-family: Raleway;
+	font-size: 1.8rem;
+	color: $color-wheat-1;
+}
+.heading-secondary{
+	font-family: 'Playfair Display Regular';
+	font-size: 2.2rem;
+	color: $color-black-1;
+}
+.paragraph-aside{
+	font-family: Raleway;
+	font-size: 1.5rem;
+	color: $color-gray-3;
+}
+.heading-columns{
+	font-size: 2.2rem;
+	font-family: 'Playfair Display Regular';
+	color: $color-black-1;
+}
+.paragraph-columns{
+	font-size: 1.5rem;
+	font-family: Raleway;
+	color: $color-gray-5;
+}
+.heading-number{
+	font-size: 5rem;
+	font-family: 'Playfair Display Regular';
+	color: $color-wheat-1;
+}
+.paragraph-italic{
+	font-size: 1.8rem;
+	font-family: 'Playfair Display Italic';
+}
+.heading-error{
+	font-size: 10rem;
+	font-family: 'Playfair Display Regular';
+	color: $color-white; 
+}
+.paragraph-error{
+	font-size: 1.8rem;
+	font-family: Raleway;
+	color: $color-wheat-1;
+	text-transform: uppercase;
+}
+

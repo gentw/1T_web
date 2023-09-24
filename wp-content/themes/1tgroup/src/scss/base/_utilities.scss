@@ -1,0 +1,30 @@
+.line-break{
+	width: 100%;
+	height: .1rem;
+	background-color: $color-wheat-1;
+}
+@include respond(tab-port){
+	.margin-services-skills{
+		margin: 2rem 0;
+		display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    width: 70%;
+	}	
+	.margin-services-features{
+		margin: 2rem 0;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		aling-items: center;
+		width: 70%;
+	}
+	.margin-contact-info{
+		margin: 3rem 0;
+		text-align: center;
+	}
+}
+.center{
+	display: flex;
+	justify-content: center;
+}
